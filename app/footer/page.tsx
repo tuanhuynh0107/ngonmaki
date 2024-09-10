@@ -21,13 +21,13 @@ const Footer: React.FC = () => {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="https://www.facebook.com/ngonmaki" target="_blank" rel="noopener noreferrer">
-                                    <img className={c.ImageSocial} src="/facebook.svg" width="45" alt="Twitter" />
+                                    <img className={c.ImageSocial} src="/Facebook.svg" width="45" alt="Facebook" />
                                     <p className={c.title} >@NGONMAKI_PR</p>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="#!" target="_blank" rel="noopener noreferrer">
-                                    <img className={c.ImageSocial} src="/LinkedIn.svg" width="45" alt="YouTube" />
+                                    <img className={c.ImageSocial} src="/LinkedIn.svg" width="45" alt="Linkedin" />
                                     <p className={c.title}>@どうとんぼり神座【公式】</p>
                                 </Nav.Link>
                             </Nav.Item>
