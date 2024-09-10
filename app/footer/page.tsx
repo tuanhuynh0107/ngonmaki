@@ -6,40 +6,43 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import c from "@/app/Styles/footer.module.css"
 
+import Link from 'next/link';
+
 const Footer: React.FC = () => {
     return (
         <footer className={c.footer}>
-            <Container fluid id="footer_sns" className={c.listSocial}>
-                <Row className="justify-content-center text-center">
-                    <Col xs="auto">
-                        <Nav className="d-flex flex-wrap justify-content-center g-3 align-items-center">
-                            <Nav.Item>
-                                <Nav.Link href="https://www.instagram.com/ngonmaki?igsh=MW16dWtzMjE5M3Q5bQ==" target="_blank" rel="noopener noreferrer">
-                                    <img className={c.ImageSocial} src="/instagram.svg" width="45" alt="Instagram" />
-                                    <p className={c.title}>@NGONMAKI_DOUTONBORI</p>
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href="https://www.facebook.com/ngonmaki" target="_blank" rel="noopener noreferrer">
-                                    <img className={c.ImageSocial} src="/Facebook.svg" width="45" alt="Facebook" />
-                                    <p className={c.title} >@NGONMAKI_PR</p>
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href="#!" target="_blank" rel="noopener noreferrer">
-                                    <img className={c.ImageSocial} src="/LinkedIn.svg" width="45" alt="Linkedin" />
-                                    <p className={c.title}>@どうとんぼり神座【公式】</p>
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href="#!" target="_blank" rel="noopener noreferrer">
-                                    <img className={c.ImageSocial} src="/Tiktok.svg" width="45" alt="TikTok" />
-                                    <p className={c.title}>@NGONMAKI_DOUTONBORI</p>
-                                </Nav.Link>
-                            </Nav.Item>
-                        </Nav>
+            <Container id="footer_sns" className={c.listSocial}>
+
+
+                <Row className="d-flex align-items-center ">
+
+                    <Col md={3}>
+                        <Link href="https://www.instagram.com/ngonmaki?igsh=MW16dWtzMjE5M3Q5bQ==" target="_blank" rel="noopener noreferrer" className="d-flex flex-column align-items-center">
+                            <img className={c.ImageSocial} src="/instagram.svg" width="45" alt="Instagram" />
+                            <p className={c.title}>@NGONMAKI_DOUTONBORI</p>
+                        </Link>
                     </Col>
+                    <Col md={3}>
+                        <Link href="https://www.facebook.com/ngonmaki" target="_blank" rel="noopener noreferrer" className="d-flex flex-column align-items-center">
+                            <img className={c.ImageSocial} src="/Facebook.svg" width="45" alt="Facebook" />
+                            <p className={c.title}>@NGONMAKI_PR</p>
+                        </Link>
+                    </Col>
+                    <Col md={3}>
+                        <Link href="#!" target="_blank" rel="noopener noreferrer" className="d-flex flex-column align-items-center">
+                            <img className={c.ImageSocial} src="/LinkedIn.svg" width="45" alt="LinkedIn" />
+                            <p className={c.title}>@どうとんぼり神座【公式】</p>
+                        </Link>
+                    </Col>
+                    <Col md={3}>
+                        <Link href="#!" target="_blank" rel="noopener noreferrer" className="d-flex flex-column align-items-center">
+                            <img className={c.ImageSocial} src="/Tiktok.svg" width="45" alt="TikTok" />
+                            <p className={c.title}>@NGONMAKI_DOUTONBORI</p>
+                        </Link>
+                    </Col>
+
                 </Row>
+
             </Container>
 
             <Container id="footerContainer " className='mt-5'>
@@ -50,7 +53,7 @@ const Footer: React.FC = () => {
                         </a>
                     </Col>
                     <Col className="d-flex flex-column">
-                        <Nav className="flex-rown ">
+                        <Nav className="flex-rown text-start">
                             <Nav.Item>
                                 <Nav.Link className={c.title} href="/category/info/">お知らせ</Nav.Link>
                             </Nav.Item>

@@ -104,6 +104,8 @@ section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 ol,
@@ -136,15 +138,22 @@ a {
 
 :root {
   --color-text: #2d2d2d;
-  --color-text-hover: #E41F26;
+  --color-text-hover: #0F6338;
 
 }
 
 
 .body {
   margin: 0px 32px;
-  padding-top: 50px;
+  padding-top: 16px;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
+}
 
+@media (max-width: 576px) {
+
+  .body {
+    margin: 0px 8px;
+
+  }
 }

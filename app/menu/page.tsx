@@ -10,8 +10,8 @@ const Menu: React.FC = () => {
     return (
 
         <>
-            <h2 className={`${c.heading}  text-center `} >MENU</h2>
             <Container className={c.Section__Menu}>
+                <h2 className={`${c.heading}  text-center `} >MENU</h2>
 
                 <section className={c.menuHero}>
                     <Row className={`${c.hero} d-flex align-items-center justify-content-between`}>
@@ -19,13 +19,13 @@ const Menu: React.FC = () => {
                             <Image className={c.Imagehero}
                                 src="/menu/4.png"
                                 width={610}
-                                height={400}  // Provide height as well
+                                height={400}
                                 alt="OISHI RAMEN"
                                 style={{ width: '100%', height: 'auto', objectFit: "cover" }}
                             />
                         </Col>
                         <Col className="" data-aos="fade" xs={12} md={6}>
-                            <div className="p-5">
+                            <div className={c.heroContent}>
                                 <h4 className={c.heroTitle}>
                                     おいしいラーメン
                                 </h4>

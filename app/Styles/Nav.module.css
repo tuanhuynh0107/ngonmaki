@@ -5,6 +5,34 @@
     padding: 0px 32px;
 }
 
+@media (max-width: 768px) {
+    .header {
+        padding: 0px 24px;
+        /* Giảm padding cho tablet */
+    }
+
+    .nav {
+        width: 100%;
+    }
+}
+
+/* Mobile: Màn hình có kích thước tối đa 576px */
+@media (max-width: 576px) {
+    .header {
+        padding: 0px 16px;
+        /* Giảm padding cho mobile */
+    }
+
+    .nav {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.headerInner {
+    max-width: 1400px;
+}
+
 .headlogo {
     flex: 1;
 }
@@ -94,19 +122,26 @@
 
 }
 
-.nav {
-    gap: 40px;
+.menuInner {
+    width: 100%;
 }
 
-.menuInner {
-    width: 60%;
+.nav {
+    gap: 40px;
+    height: 100vh;
+    overflow-x: hidden;
 }
+
+
 
 
 
 .menu_exlink {
     gap: 30px;
+}
 
+.menu_social {
+    gap: 30px;
 }
 
 .menu_exlink li {

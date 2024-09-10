@@ -46,12 +46,13 @@ const Header: React.FC = () => {
                     opacity: isActive ? 1 : 0,
                     transform: isActive ? 'scale(1)' : 'scale(0.95)',
                     transition: 'opacity 1s ease, transform 1s ease, visibility 1s 0.4s',
-                    height: isActive ? '100vh' : 0, // Ensure the height is set to 0 when inactive
+                    // Ensure the height is set to 0 when inactive
                     overflow: 'hidden',
                 }}>
 
                 <Row className={c.menuInner}>
-                    <Col md={6}>
+                    <Col md={3}></Col>
+                    <Col md={3}>
                         <ul className={c.menu_Nav}>
                             <li>
                                 <Nav.Link href="#!">
@@ -73,7 +74,7 @@ const Header: React.FC = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col md={6}>
+                    <Col md={3}>
                         <ul className={c.menu_Nav}>
                             <li>
                                 <Nav.Link href="#!">
@@ -95,50 +96,63 @@ const Header: React.FC = () => {
                             </li>
                         </ul>
                     </Col>
+
+                    <Col md={3}></Col>
                 </Row>
+
+
                 <Row className={c.menuInner}>
-                    <Col md={12} className={`${c.menu_right} d-flex justify-content-start align-items-center`}>
-                        <ul className={`${c.menu_exlink} d-flex justify-content-start align-items-center`}>
+                    <Col md={3}></Col>
+                    <Col md={6}>
+                        <ul className={`${c.menu_exlink} d-flex justify-content-start align-items-start w-100`}>
                             <li>
-                                <Nav.Link href="#!" target="_blank" rel="noopener noreferrer">
+                                <Nav.Link className='text-nowrap' href="#!" target="_blank" rel="noopener noreferrer">
                                     お問い合わせ
                                 </Nav.Link>
                             </li>
                             <li>
-                                <Nav.Link href="#!" target="_blank" rel="noopener noreferrer">
+                                <Nav.Link className='text-nowrap' href="#!" target="_blank" rel="noopener noreferrer">
                                     運営会社
                                 </Nav.Link>
                             </li>
                         </ul>
                     </Col>
+                    <Col md={3}></Col>
                 </Row>
-                <Row className={`${c.menuInner} ${c.menuSocial}  d-flex justify-content-start align-items-center`}>
-                    <Col xs="auto">
-                        <Nav.Link href="#">
-                            <img src="/Facebook.svg" alt="Facebook" />
-                        </Nav.Link>
+                <Row className={c.menuInner}>
+                    <Col md={3}></Col>
+                    <Col md={6}>
+                        <ul className={` ${c.menu_social} d-flex justify-content-start align-items-start`}>
+                            <li >
+                                <Nav.Link href="#">
+                                    <img src="/Facebook.svg" alt="Facebook" />
+                                </Nav.Link>
+                            </li>
+                            <li >
+                                <Nav.Link href="#">
+                                    <img src="/X.png" alt="Twitter" />
+                                </Nav.Link>
+                            </li>
+                            <li >
+                                <Nav.Link href="#">
+                                    <img src="/Instagram.svg" alt="Instagram" />
+                                </Nav.Link>
+                            </li>
+                            <li >
+                                <Nav.Link href="#">
+                                    <img src="/LinkedIn.svg" alt="LinkedIn" />
+                                </Nav.Link>
+                            </li>
+                            <li >
+                                <Nav.Link href="#">
+                                    <img src="/Tiktok.svg" alt="Tiktok" />
+                                </Nav.Link>
+                            </li>
+                        </ul>
                     </Col>
-                    <Col xs="auto">
-                        <Nav.Link href="#">
-                            <img src="/X.png" alt="Twitter" />
-                        </Nav.Link>
-                    </Col>
-                    <Col xs="auto">
-                        <Nav.Link href="#">
-                            <img src="/Instagram.svg" alt="Instagram" />
-                        </Nav.Link>
-                    </Col>
-                    <Col xs="auto">
-                        <Nav.Link href="#">
-                            <img src="/LinkedIn.svg" alt="LinkedIn" />
-                        </Nav.Link>
-                    </Col>
-                    <Col xs="auto">
-                        <Nav.Link href="#">
-                            <img src="/Tiktok.svg" alt="Tiktok" />
-                        </Nav.Link>
-                    </Col>
+                    <Col md={3}></Col>
                 </Row>
+
 
                 <Copyright />
             </Container>

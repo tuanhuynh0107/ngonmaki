@@ -3,11 +3,59 @@
     max-width: 1440px;
 }
 
-.heading {
+.heading,
+.headingGoiCuon,
+.headingCombo,
+.headingNoodle,
+.headingTopping {
     font-size: 2.5rem;
     font-weight: 550;
     text-align: center;
     margin-bottom: 16px;
+}
+
+.headingGoiCuon::after {
+    content: "春巻き";
+    display: block;
+    font-size: .5em;
+    font-weight: 300;
+    color: #888;
+    margin-top: 10px;
+
+}
+
+.headingCombo::after {
+    content: "コンボ";
+    display: block;
+    font-size: .5em;
+    font-weight: 300;
+    color: #888;
+    margin-top: 10px;
+}
+
+.headingNoodle::after {
+    content: "麺";
+    display: block;
+
+    font-size: .5em;
+    font-weight: 300;
+
+    color: #888;
+
+    margin-top: 10px;
+
+}
+
+.headingTopping::after {
+    content: "麺";
+    display: block;
+
+    font-size: .5em;
+    font-weight: 300;
+
+    color: #888;
+
+    margin-top: 10px;
 }
 
 .cardImage {
@@ -16,11 +64,10 @@
     border-radius: 12px;
     box-shadow: 0px 0px 1px 0px rgba(40, 41, 61, 0.08), 0px 0.5px 2px 0px rgba(96, 97, 112, 0.16);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover effect */
 
     &:hover {
         transform: scale(1.05);
-        /* Zoom in on hover */
+
         box-shadow: 0px 2px 4px 0px rgba(40, 41, 61, 0.04), 0px 8px 16px 0px rgba(96, 97, 112, 0.16);
     }
 }
@@ -31,15 +78,16 @@
     border-radius: 12px;
     box-shadow: 0px 0px 1px 0px rgba(40, 41, 61, 0.08), 0px 0.5px 2px 0px rgba(96, 97, 112, 0.16);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover effect */
+
 
     &:hover {
         transform: scale(1.05);
-        /* Zoom in on hover */
+
         box-shadow: 0px 2px 4px 0px rgba(40, 41, 61, 0.04), 0px 8px 16px 0px rgba(96, 97, 112, 0.16);
     }
 }
 
+.cardTitleDrink,
 .cardTitle {
     text-align: center;
     font-size: 1.21875rem;
@@ -50,6 +98,11 @@
         color: var(--color-text-hover);
     }
 }
+
+.cardTitleDrink {
+    text-align: start;
+}
+
 
 .Card {
     border: none;

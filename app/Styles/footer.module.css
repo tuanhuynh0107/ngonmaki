@@ -8,6 +8,7 @@
 }
 
 .title {
+    text-align: start;
     color: var(--color-text);
 
     &:hover {
