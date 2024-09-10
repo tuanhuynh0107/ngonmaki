@@ -1,0 +1,64 @@
+.Section__Menu {
+    padding: 80px 40px;
+    max-width: 1440px;
+}
+
+.heading {
+    color: var(--color-text);
+    font-size: 4.6875rem;
+    font-weight: 550;
+}
+
+.heading::after {
+    content: "メニュー";
+    display: block;
+    /* Ensure it takes up space */
+    font-size: 0.3em;
+    font-weight: 300;
+    /* Adjust font size as needed */
+    color: #888;
+    /* Adjust color as needed */
+    margin-top: 10px;
+    /* Adjust spacing as needed */
+}
+
+.menuHero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 32px;
+}
+
+.menuHero::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 335px;
+    width: 50%;
+    height: 74%;
+    background: #EAEAEA;
+    background-size: cover;
+    filter: blur(10px);
+    /* Adjust blur amount as needed */
+    z-index: -1;
+    /* Ensure the background is behind the content */
+    opacity: 0.7;
+    /* Optional: adjust opacity to see more or less of the blur effect */
+}
+
+.Imagehero {
+    border-radius: 12px;
+}
+
+.heroTitle {
+    font-size: 2.1875rem;
+    font-weight: 550;
+    margin-bottom: 32px;
+}
+
+.heroDesc {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: justify;
+}

@@ -1,0 +1,22 @@
+.footer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.ImageSocial {
+    margin-bottom: 16px;
+}
+
+.title {
+    color: var(--color-text);
+
+    &:hover {
+        color: var(--color-text-hover);
+    }
+}
+
+.listSocial {
+    padding: 80px 0px;
+    border-bottom: 1px solid var(--color-text);
+    border-top: 1px solid var(--color-text);
+}

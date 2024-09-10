@@ -1,0 +1,76 @@
+.Sections_List {
+    padding: 80px 0px;
+    max-width: 1440px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cardImage {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px 0px rgba(40, 41, 61, 0.08), 0px 0.5px 2px 0px rgba(96, 97, 112, 0.16);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+
+    &:hover {
+        transform: scale(1.05);
+        /* Zoom in on hover */
+        box-shadow: 0px 2px 4px 0px rgba(40, 41, 61, 0.04), 0px 8px 16px 0px rgba(96, 97, 112, 0.16);
+    }
+}
+
+.cardImagePho {
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px 0px rgba(40, 41, 61, 0.08), 0px 0.5px 2px 0px rgba(96, 97, 112, 0.16);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+
+    &:hover {
+        transform: scale(1.05);
+        /* Zoom in on hover */
+        box-shadow: 0px 2px 4px 0px rgba(40, 41, 61, 0.04), 0px 8px 16px 0px rgba(96, 97, 112, 0.16);
+    }
+}
+
+.cardTitle {
+    text-align: center;
+    font-size: 1.21875rem;
+    font-weight: bold;
+    color: var(--color-text);
+
+    &:hover {
+        color: var(--color-text-hover);
+    }
+}
+
+.Card {
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.combo {
+    width: 86%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardDrink {
+    border-bottom: 1px solid #ccc;
+}
