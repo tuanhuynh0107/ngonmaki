@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <Container fluid id="footer_sns" className={c.listSocial}>
                 <Row className="justify-content-center text-center">
                     <Col xs="auto">
-                        <Nav className="d-flex flex-wrap justify-content-between g-3">
+                        <Nav className="d-flex flex-wrap justify-content-center g-3 align-items-center">
                             <Nav.Item>
                                 <Nav.Link href="https://www.instagram.com/ngonmaki?igsh=MW16dWtzMjE5M3Q5bQ==" target="_blank" rel="noopener noreferrer">
                                     <img className={c.ImageSocial} src="/instagram.svg" width="45" alt="Instagram" />
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                         </a>
                     </Col>
                     <Col className="d-flex flex-column">
-                        <Nav className="flex-rown">
+                        <Nav className="flex-rown ">
                             <Nav.Item>
                                 <Nav.Link className={c.title} href="/category/info/">お知らせ</Nav.Link>
                             </Nav.Item>
