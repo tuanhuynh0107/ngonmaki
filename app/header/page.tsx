@@ -61,7 +61,7 @@ const Header: React.FC = () => {
                                 </Nav.Link>
                             </li>
                             <li>
-                                <Nav.Link href="#!">
+                                <Nav.Link href="/menu">
                                     <p className={c.menuNavTitle}>MENU</p>
                                     <p className={c.menuNavSubTitle}>お品書き</p>
                                 </Nav.Link>

@@ -12,10 +12,7 @@ const Footer: React.FC = () => {
     return (
         <footer className={c.footer}>
             <Container id="footer_sns" className={c.listSocial}>
-
-
-                <Row className="d-flex align-items-center ">
-
+                <Row className="d-flex align-items-center g-5">
                     <Col md={3}>
                         <Link href="https://www.instagram.com/ngonmaki?igsh=MW16dWtzMjE5M3Q5bQ==" target="_blank" rel="noopener noreferrer" className="d-flex flex-column align-items-center">
                             <img className={c.ImageSocial} src="/instagram.svg" width="45" alt="Instagram" />
@@ -45,15 +42,15 @@ const Footer: React.FC = () => {
 
             </Container>
 
-            <Container id="footerContainer " className='mt-5'>
-                <Row className="justify-content-between align-items-center">
-                    <Col className="d-flex align-items-center">
+            <Container id="footerContainer" className={`mt-5  align-items-center`}>
+                <Row className={`${c.footterContent} justify-content-between align-items-center g-3`}>
+                    <Col className="d-flex align-items-center mx-auto" md={6}>
                         <a href="https://kamukura.co.jp/" target="_blank" rel="noopener noreferrer">
                             <img src="logoAmban.png" width="280" alt="NgonMaki logo" />
                         </a>
                     </Col>
-                    <Col className="d-flex flex-column">
-                        <Nav className="flex-rown text-start">
+                    <Col className="d-flex flex-column " md={6}>
+                        <Nav className="flex-rown text-start align-items-center">
                             <Nav.Item>
                                 <Nav.Link className={c.title} href="/category/info/">お知らせ</Nav.Link>
                             </Nav.Item>
@@ -82,16 +79,7 @@ const Footer: React.FC = () => {
                             </Nav.Item>
                         </Nav>
                     </Col>
-                    <Col className="text-center mt-3">
-                        <Nav className="d-flex flex-column align-items-center">
-                            <Nav.Item>
-                                <Nav.Link href="https://kamukura-usa.com/" target="_blank">
-                                    <img src="logoAmban.png" width="180" alt="KAMUKURA USA BRAND SITE" />
-                                </Nav.Link>
-                                <p className="text-muted">NGONMAKI VIETNAM BRAND SITE</p>
-                            </Nav.Item>
-                        </Nav>
-                    </Col>
+
                 </Row>
                 <Row className="justify-content-center">
                     <Col className="text-center mt-3">
@@ -99,7 +87,7 @@ const Footer: React.FC = () => {
                     </Col>
                 </Row>
             </Container>
-        </footer>
+        </footer >
     );
 };
 
